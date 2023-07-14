@@ -1,0 +1,4 @@
+Link API:  https://api.openweathermap.org/data/2.5/weather?lat=32.83961&lon=59.2177294&appid=e9c9866d36637dbc23dbff654e160d61
+double lat = 32.83961;
+double lon = 59.2177294;
+String apiKey = e9c9866d36637dbc23dbff654e160d61

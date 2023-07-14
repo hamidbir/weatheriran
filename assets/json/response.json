@@ -1,0 +1,39 @@
+{
+    "coord":{"lon":59.2177,"lat":32.8634},
+    "weather":[
+        {
+            "id":803,
+            "main":"Clouds",
+            "description":"broken clouds",
+            "icon":"04d"    
+        }],
+        "base":"stations",
+        "main": {
+            "temp":296.35,
+            "feels_like":295.12,
+            "temp_min":296.35,
+            "temp_max":296.35,
+            "pressure":1017,
+            "humidity":15
+            },
+        "visibility":800,
+        "wind":{
+            "speed":15.95,
+            "deg":220
+                },
+        "clouds":{"all":75},
+        "dt":1680865437,
+        "sys":{
+            "type":1,
+            "id":7481,
+            "country":"IR",
+            "sunrise":1680831836,
+            "sunset":1680877589
+            },
+        "timezone":12600,
+        "id":140463,
+        "name":"Birjand",
+        "cod":200
+}
+
+// https://api.openweathermap.org/data/2.5/weather?lat=32.83961&lon=59.2177294&appid=e9c9866d36637dbc23dbff654e160d61
