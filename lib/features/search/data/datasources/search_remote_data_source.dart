@@ -1,10 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:weatheriran/core/error/exception.dart';
-import 'package:weatheriran/features/current_weather/presentation/bloc/current_weather_bloc.dart';
-import 'package:weatheriran/features/search/data/models/search_city_model.dart';
 import 'package:http/http.dart' as http;
+import 'package:weatheriran/core/error/exception.dart';
+import 'package:weatheriran/features/search/data/models/search_city_model.dart';
 
 abstract class SearchRemoteDataSource {
   Future<SearchCityModel> searchingCity(String name);
@@ -25,7 +24,6 @@ class SearchRemoteDataSourceImpl implements SearchRemoteDataSource {
     if (response.statusCode == 200) {
       debugPrint('${response.body.isEmpty}');
       debugPrint('${response.body.length}');
-      debugPrint('${response.body}');
       if (response.body.length != 2) {
         dynamic parsedJson = json.decode(response.body);
         debugPrint(' parsed json: $parsedJson');

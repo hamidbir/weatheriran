@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:geolocator/geolocator.dart';
 import 'package:weatheriran/features/current_weather/presentation/pages/weather_page.dart';
 import 'injection_container.dart' as di;
 

@@ -53,7 +53,7 @@ dev_dependencies:
 flutter_launcher_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icon/iconApp.jpg"
+  image_path: "assets/icon/iconAPP.png"
   min_sdk_android: 21
 
 # For information on the generic Dart part of this file, see the
@@ -72,6 +72,7 @@ flutter:
     - assets/circle_loading_weather.flr
     - assets/images/
     - assets/icon/iconApp.jpg
+    - assets/icon/iconAPP.png
   #   - images/a_dot_ham.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

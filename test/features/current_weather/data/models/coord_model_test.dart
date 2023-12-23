@@ -3,7 +3,6 @@ import 'dart:convert';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:weatheriran/core/fixture/fixture_reader.dart';
 import 'package:weatheriran/features/current_weather/data/models/models.dart';
-import 'package:weatheriran/features/current_weather/domain/entities/clouds.dart';
 import 'package:weatheriran/features/current_weather/domain/entities/coord.dart';
 
 void main() {

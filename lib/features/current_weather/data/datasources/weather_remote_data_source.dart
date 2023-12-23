@@ -37,6 +37,6 @@ class WeatherRemoteDataSourceImpl implements WeatherRemoteDataSource {
   @override
   Future<CurrentWeatherModel> getWeatherWithGeo(CityParams params) async {
     return _getWeatherFromUrl(
-        'https://api.openweathermap.org/data/2.5/weather?lat=${params.lat}&lon=${params.lon}&appid=e9c9866d36637dbc23dbff654e160d61');
+        'https://api.openweathermap.org/data/2.5/weather?lat=${params.lat}&lon=${params.lon}&appid=KEY');
   }
 }

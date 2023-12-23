@@ -1,6 +1,5 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:flutter/foundation.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:weatheriran/core/error/failure.dart';
 import 'package:weatheriran/core/usecases/usecase.dart';

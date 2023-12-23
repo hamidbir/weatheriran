@@ -13,7 +13,6 @@ class WeatherPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // appBar: AppBar(),
       body: Container(
           decoration: const BoxDecoration(
             gradient: LinearGradient(colors: [
@@ -37,7 +36,7 @@ class WeatherPage extends StatelessWidget {
           create: (context) => sl<SearchBloc>(),
         )
       ],
-      child: RefreshWeather(),
+      child: const RefreshWeather(),
     );
   }
 }
@@ -59,33 +58,6 @@ class _WeatherControlsState extends State<WeatherControls> {
           dispatchWeather();
         },
         child: const Text('Update weather'));
-    // return Column(
-    //   children: [
-    //     TextField(
-    //       controller: controller,
-    //       keyboardType: TextInputType.text,
-    //       decoration: const InputDecoration(
-    //         border: OutlineInputBorder(),
-    //         hintText: 'input',
-    //       ),
-    //       onChanged: (value) {
-    //         inputStr = value;
-    //       },
-    //       onSubmitted: (_) {
-    //         dispatchWeather();
-    //       },
-    //     ),
-    //     const SizedBox(
-    //       width: 10,
-    //     ),
-    //     Expanded(
-    //         child: ElevatedButton(
-    //             onPressed: () {
-    //               dispatchWeather();
-    //             },
-    //             child: const Text('Update weather')))
-    //   ],
-    // );
   }
 
   void dispatchWeather() {
@@ -95,21 +67,12 @@ class _WeatherControlsState extends State<WeatherControls> {
 }
 
 class RefreshWeather extends StatelessWidget {
-  RefreshWeather({super.key});
+  const RefreshWeather({super.key});
 
   @override
   Widget build(BuildContext context) {
     BlocProvider.of<CurrentWeatherBloc>(context).add(UpdatingWeatherWithLoc());
     return Scaffold(
-      // appBar: AppBar(
-      //   elevation: 0,
-      //   backgroundColor: Colors.black.withOpacity(0.5),
-      //   actions: const [
-      //     TextField(
-      //       decoration: InputDecoration(hintText: 'Search city'),
-      //     ),
-      //   ],
-      // ),
       body: BlocBuilder<CurrentWeatherBloc, CurrentWeatherState>(
         builder: (context, state) {
           if (state is Empty) {
@@ -119,16 +82,9 @@ class RefreshWeather extends StatelessWidget {
           } else if (state is Loaded) {
             return Stack(
               children: [
-                // Container(
-                //   width: 100,
-                //   height: 100,
-                //   color: Colors.blue,
-                // ),
-
                 WeatherDisplay(
                   weather: state.weather,
                 ),
-
                 const FlareActor(
                   'assets/loading_weather.flr',
                   animation: 'loaded',

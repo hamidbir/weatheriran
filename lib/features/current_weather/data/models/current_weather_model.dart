@@ -1,5 +1,4 @@
 import 'package:weatheriran/features/current_weather/data/models/models.dart';
-import 'package:weatheriran/features/current_weather/domain/entities/coord.dart';
 import 'package:weatheriran/features/current_weather/domain/entities/current_weather.dart';
 import 'package:weatheriran/features/current_weather/domain/entities/weather.dart';
 

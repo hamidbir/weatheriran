@@ -1,15 +1,14 @@
 import 'dart:convert';
 
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mockito/annotations.dart';
 import 'package:http/http.dart' as http;
+import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:weatheriran/core/error/exception.dart';
 import 'package:weatheriran/core/fixture/fixture_reader.dart';
 import 'package:weatheriran/features/current_weather/data/datasources/weather_remote_data_source.dart';
 import 'package:weatheriran/features/current_weather/data/models/models.dart';
 
-import '../repositories/weather_repository_impl_test.mocks.dart';
 import 'weather_remote_data_source_test.mocks.dart';
 
 @GenerateMocks([http.Client])
